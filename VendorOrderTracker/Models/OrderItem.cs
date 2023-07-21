@@ -1,6 +1,6 @@
 namespace VendorOrderTracker.Models;
 
-public class MenuItem
+public class OrderItem
 {
     public string Product { get; }
     public string Option { get; }

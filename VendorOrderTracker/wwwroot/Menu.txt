@@ -1,0 +1,2 @@
+bread:house_bread 5 2 french/italian/portuguese/american,ryebread 8 2 icelandic/finnish,sourdough 7 2 german/italian/american,flatbread 6 4 middle_eastern/italian
+pastry:house_pastry 2 3 filipino/austrian/portuguese/french,custard 3 6 french/portuguese/japanese,macaroon 1 8 french/filipino,strudel 5 3 austrian/turkish/hungarian,croissant 4 2 french/australian/canadian
