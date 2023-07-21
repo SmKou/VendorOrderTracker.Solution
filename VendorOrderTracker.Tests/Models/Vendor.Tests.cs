@@ -1,4 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Collections.Generic;
 using VendorOrderTracker.Models;
 
 namespace VendorOrderTracker.Tests;
@@ -14,7 +16,7 @@ public class VendorTests : IDisposable
 
         Vendor test = new Vendor(name, description);
 
-        Assert.AreEqual(typeof(test), test.GetType());
+        Assert.AreEqual(typeof(Vendor), test.GetType());
         Assert.AreEqual(name, test.Name);
         Assert.AreEqual(description, test.Description);
     }
@@ -62,14 +64,12 @@ public class VendorTests : IDisposable
         string orderDescription = "booth";
         int price = 1;
 
-        List<Order> expected = new List<Order>
-        {
-            new Order(name, orderDescription, price)
-        };
-        int id = 0;
-
         Vendor test = new Vendor(name, description);
         test.Add(orderDescription, price);
+        List<Order> expected = new List<Order>
+        {
+            test.Get(0)
+        };
         List<Order> result = test.Get();
 
         CollectionAssert.AreEqual(expected, result);

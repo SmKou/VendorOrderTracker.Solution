@@ -19,7 +19,7 @@ public class OrderTests
 
         Order test = new Order(vendor, description, price);
 
-        Assert.AreEqual(typeof(test), test.GetType());
+        Assert.AreEqual(typeof(Order), test.GetType());
         Assert.AreEqual(description, test.Description);
         Assert.AreEqual(price, test.Price);
         Assert.AreEqual(date, test.Date);
