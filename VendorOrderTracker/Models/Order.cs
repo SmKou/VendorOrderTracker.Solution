@@ -9,15 +9,12 @@ public class Order
 
     public Order(string vendorName, string description, int price)
     {
-        
-    }
-}
-
-/*
-Description = description;
+        Description = description;
         Price = price;
         DateTime now = DateTime.Now;
         Date = now.ToString("yyyy'-'MM'-'dd");
         string timeId = now.ToString("yyyy'-'MM'-'dd'T'HH':'mm':'ss");
-        Title = vendorName + timeId;
-*/
+        string vendor = String.Join("_", vendorName.ToLower().Split(" "));
+        Title = vendor + timeId;
+    }
+}
