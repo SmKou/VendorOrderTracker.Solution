@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Sm Kou\\Github\\VendorOrderTracker.Solution\\VendorOrderTracker\\VendorOrderTracker.csproj": {}
+    "C:\\Users\\Sm Kou\\Github\\VendorOrderTracker.Solution\\VendorOrderTracker\\VendorOrderTracker.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Sm Kou\\Github\\VendorOrderTracker.Solution\\VendorOrderTracker\\VendorOrderTracker.csproj": {
+    "C:\\Users\\Sm Kou\\Github\\VendorOrderTracker.Solution\\VendorOrderTracker\\VendorOrderTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Sm Kou\\Github\\VendorOrderTracker.Solution\\VendorOrderTracker\\VendorOrderTracker.csproj",
+        "projectUniqueName": "C:\\Users\\Sm Kou\\Github\\VendorOrderTracker.Solution\\VendorOrderTracker\\VendorOrderTracker.csproj",
         "projectName": "VendorOrderTracker",
-        "projectPath": "c:\\Users\\Sm Kou\\Github\\VendorOrderTracker.Solution\\VendorOrderTracker\\VendorOrderTracker.csproj",
+        "projectPath": "C:\\Users\\Sm Kou\\Github\\VendorOrderTracker.Solution\\VendorOrderTracker\\VendorOrderTracker.csproj",
         "packagesPath": "C:\\Users\\Sm Kou\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Sm Kou\\Github\\VendorOrderTracker.Solution\\VendorOrderTracker\\obj\\",
+        "outputPath": "C:\\Users\\Sm Kou\\Github\\VendorOrderTracker.Solution\\VendorOrderTracker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sm Kou\\AppData\\Roaming\\NuGet\\NuGet.Config"
