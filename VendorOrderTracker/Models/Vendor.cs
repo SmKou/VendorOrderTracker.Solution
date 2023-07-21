@@ -17,27 +17,28 @@ public class Vendor
     }
 
     public void Add(string description, int price)
-    {
-        _orders.Add(new Order(Name, description, price));
-    }
+    {}
 
     public void Add(Order order)
-    {
-        _orders.Add(order);
-    }
+    {}
+
+    public List<Order> Get()
+    {}
 
     public Order Get(int id)
-    {
-        return _orders[id];
-    }
+    {}
 
     public static Vendor Find(string name)
-    {
-        return _vendors.Find(v => v.Name == name);
-    }
+    {}
 
     public static Vendor Find(int id)
+    {}
+
+    public static List<Vendor> GetAll()
+    {}
+
+    public static void Clear()
     {
-        return _vendors[id];
+        _vendors.Clear();
     }
 }
