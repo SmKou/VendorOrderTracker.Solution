@@ -13,17 +13,11 @@ public class Vendor
         Name = name;
         Description = description;
         _orders = new List<Order>();
-        _vendors.Add(this);
     }
 
-    public void Add(string description, string date, int price)
+    public void Add(string title, string description, string date, int price)
     {
-        _orders.Add(new Order(Name, description, date, price));
-    }
-
-    public void Add(Order order)
-    {
-        _orders.Add(order);
+        _orders.Add(new Order(Name, title, description, date, price));
     }
 
     public List<Order> Get()
@@ -38,16 +32,14 @@ public class Vendor
         return _orders[id];
     }
 
+    public static void AddVendor(string name, string description)
+    {
+        _vendors.Add(new Vendor(name, description));
+    }
+
     public static Vendor Find(string name)
     {
         return _vendors.Find(v => v.Name == name);
-    }
-
-    public static Vendor Find(int id)
-    {
-        if (id < 0 || id > _vendors.Count - 1)
-            return null;
-        return _vendors[id];
     }
 
     public static List<Vendor> GetAll()

@@ -1,0 +1,41 @@
+@{
+    Layout = "_Layout";
+}
+
+<body>
+    @using VendorOrderTracker.Models;
+    <header>
+        <h1>@Model["VendorName"]</h1>
+        <ul class="nav">
+            <li><a href='/'>Home</a></li>
+            <li><a href='/vendors'>View All Vendors</a></li>
+            <li><a href='/vendors/@Model["VendorName"]/orders/new'>New Order</a></li>
+        </ul>
+    </header>
+    <main>
+        @if (@Model["Orders"].Count == 0)
+        {
+            <p>You have no orders for this vendor yet.</p>
+        }
+
+        <ul class="list-view data-4">
+            @if (@Model["Orders"].Count != 0)
+            {
+                <li class="header-row"><span>Title</span><span>Description</span><span>Price</span><span>Delivery</span></li>
+            }
+            @for (int i = 0; i < @Model["Orders"].Count; i++)
+            {
+                Order order = @Model["Orders"][i];
+                int id = i + 1;
+                <li>
+                    <div class="listing">
+                        <span>@order.Title</span>
+                        <span>@order.Description</span>
+                        <span>$@order.Price</span>
+                        <span>@order.Date</span>
+                    </div>
+                </li>
+            }
+        </ul>
+    </main>
+</body>

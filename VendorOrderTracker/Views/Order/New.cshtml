@@ -1,0 +1,30 @@
+@{
+    Layout = "_Layout";
+}
+
+<body>
+    <header>
+        <h1>@Model.Name</h1>
+        <ul class="nav">
+            <li><a href='/'>Home</a></li>
+            <li><a href='/vendors'>View All Vendors</a></li>
+            <li><a href='/vendors/@Model/orders/'>Return to Vendor</a></li>
+        </ul>
+    </header>
+    <main>
+        @using VendorOrderTracker.Models;
+        <form action='/vendors/@Model.Name/orders' method="POST">
+            <input type="hidden" name="vendorName" value='@Model.Name'>
+            <label for="OrderTitle">Title</label>
+            <input type="text" id="OrderTitle" name="title" required>
+            <label for="OrderDescription">Description
+            </label>
+            <input type="text" id="OrderDescription" name="description" required>
+            <label for="OrderPrice">Price</label>
+            <input type="number" id="OrderPrice" name="price" min="1" required>
+            <label for="OrderDate">Delivery Date</label>
+            <input asp-for="SelectedDate" type="date" id="OrderDate" name="date" min="@DateTime.Today.AddDays(1).ToString("yyyy-MM-dd")" pattern="\d{4}-\d{2}-\{2}" required>
+            <input type="submit" value="Add Order">
+        </form>
+    </main>
+</body>

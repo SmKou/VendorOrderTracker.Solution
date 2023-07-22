@@ -1,0 +1,22 @@
+@{
+    Layout = "_Layout";
+}
+
+<body>
+    <header>
+        <h1>Add Vendor</h1>
+        <ul class="nav">
+            <li><a href='/'>Home</a></li>
+            <li><a href='/vendors'>View All Vendors</a></li>
+        </ul>
+    </header>
+    <main>
+        <form action='/vendors' method="POST">
+            <label for="VendorName">Name of the Vendor</label>
+            <input type="text" id="VendorNameIpt" name="vendorName" required>
+            <label for="VendorDescription">Description</label>
+            <input type="text" id="VendorDescription" name="description" required>
+            <input type="submit" value="Add Vendor">
+        </form>
+    </main>
+</body>

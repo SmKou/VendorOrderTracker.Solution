@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-left: 24px;
+    font-family: 'Roboto Condensed';
+    font-size: 48px;
+}
+
+p, li, a {
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+a {
+    position: relative;
+    color: #333;
+    text-decoration: underline overline;
+}
+
+.nav {
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.nav li {
+    list-style-type: none;
+    padding: 0 12px;
+}
+
+.nav li a {
+    position: relative;
+}
+
+.nav li:hover a::before,
+.nav li:hover a::after {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    content: "";
+    z-index: 10;
+}
+
+.nav li:hover a::before {
+    top: -3px;
+}
+
+.nav li:hover a::after {
+    bottom: -3px;
+}
+
+main {
+    width: 85%;
+    margin-top: 156px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro {
+    width: 100%;
+    max-width: 640px;
+}
+
+.intro strong
+{
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.button {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button a {
+    padding: 16px 20px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #ccc;
+}
+
+.button:hover a {
+    font-weight: bold;
+}
+
+.list-view {
+    width: 100%;
+    padding: 0;
+    display: column;
+}
+
+.list-view li {
+    list-style: none;
+}
+
+.list-view li a,
+.list-view .listing,
+.list-view .header-row {
+    text-decoration: none;
+    height: 32px;
+    margin: 4px 0;
+    display: grid;
+}
+
+.list-view.data-2 li a,
+.list-view.data-2 .header-row {
+    grid-template-columns: 120px 1fr;
+}
+
+.list-view.data-4 .listing,
+.list-view.data-4 .header-row {
+    grid-template-columns: 180px 6fr 1fr 120px;
+}
+
+.list-view li a span,
+.list-view .header-row span,
+.list-view .listing span { 
+    width: 100%;
+    height: 32px;
+    padding: 8px;
+    background: #ddd;
+}
+
+.list-view .header-row span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.list-view li span:first-of-type,
+.list-view .header-row span:first-of-type {
+    background: #eee;
+}
+
+form {
+    width: 100%;
+    max-width: 640px;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    row-gap: 16px;
+}
+
+label {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input:hover,
+input:focus {
+    border-bottom: 1px solid #333;
+}
+
+input[type=submit] {
+    margin: 20px 0;
+    padding: 10px 0;
+    font-family: 'Roboto';
+    font-size: 18px;
+    grid-column: span 2;
+}

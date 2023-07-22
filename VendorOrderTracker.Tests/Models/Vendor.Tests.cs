@@ -26,32 +26,14 @@ public class VendorTests : IDisposable
     {
         string name = "Susie";
         string description = "cafe";
+        string orderName = "donuts";
         string orderDescription = "booth";
         string date = "2023-7-24";
         int price = 1;
         int id = 0;
 
         Vendor test = new Vendor(name, description);
-        test.Add(orderDescription, date, price);
-        Order result = test.Get(id);
-
-        Assert.AreEqual(1, test.Get().Count);
-        Assert.AreEqual(orderDescription, result.Description);
-    }
-
-    [TestMethod]
-    public void AddandGet_AddOrderToOrdersWithOrderObject_Void()
-    {
-        string name = "Susie";
-        string description = "cafe";
-        string orderDescription = "booth";
-        string date = "2023-7-24";
-        int price = 1;
-        int id = 0;
-
-        Vendor test = new Vendor(name, description);
-        Order tester = new Order(name, orderDescription, date, price);
-        test.Add(tester);
+        test.Add(orderName, orderDescription, date, price);
         Order result = test.Get(id);
 
         Assert.AreEqual(1, test.Get().Count);
@@ -63,12 +45,13 @@ public class VendorTests : IDisposable
     {
         string name = "Susie";
         string description = "cafe";
+        string orderName = "donuts";
         string orderDescription = "booth";
         string date = "2023-7-24";
         int price = 1;
 
         Vendor test = new Vendor(name, description);
-        test.Add(orderDescription, date, price);
+        test.Add(orderName, orderDescription, date, price);
         List<Order> expected = new List<Order>
         {
             test.Get(0)
@@ -85,25 +68,24 @@ public class VendorTests : IDisposable
     }
 
     [TestMethod]
+    public void AddVendor_CreateAndAddVendorToVendors_Void()
+    {
+        string name = "Susie";
+        string description = "cafe";
+        Vendor.AddVendor(name, description);
+
+        Assert.AreEqual(1, Vector.GetAll().Count);
+        Assert.AreEqual(name, Vector.Find(1).Name);
+        Assert.AreEqual(description, Vector.Find(1).Description);
+    }
+
+    [TestMethod]
     public void Find_ReturnVendorFoundWithName_Vendor()
     {
         string name = "Susie";
         string description = "cafe";
         Vendor test = new Vendor(name, description);
         Vendor result = Vendor.Find(name);
-
-        Assert.AreEqual(test.Name, result.Name);
-        Assert.AreEqual(test.Description, result.Description);
-    }
-
-    [TestMethod]
-    public void Find_ReturnVendorFoundWithId_Vendor()
-    {
-        string name = "Susie";
-        string description = "cafe";
-        int id = 0;
-        Vendor test = new Vendor(name, description);
-        Vendor result = Vendor.Find(id);
 
         Assert.AreEqual(test.Name, result.Name);
         Assert.AreEqual(test.Description, result.Description);
