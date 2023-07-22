@@ -20,12 +20,32 @@ The homepage consists of a splash page for the app's main function, from which t
 ### Under Consideration
 
 - View order page
-- Delete vendors, all orders from vendor, individual orders, or all vendors
+- Delete vendors or all vendors
+- Delete all orders from vendor or individual orders
 - Update vendor or order details
 - Update paid status of order
-- Add search
+- Add search capabilities
+- Add data loading and storing
 
 ## Complete Setup
+
+- Navigate to main page of repo
+- Clone or Fork project
+
+```bash
+dotnet run --project VendorOrderTracker
+```
+
+Or
+- cd into project main folder: VendorOrderTracker
+- Run bash command without project redirection: --project ProjectName
+
+If you are going to make changes and would like to see how those changes affect your app in realtime, use:
+```bash
+dotnet watch run --project VendorOrderTracker
+```
+
+Reminder: If you make changes to the Models, these changes require a restart of the server.
 
 ## Known Bugs
 
