@@ -12,13 +12,19 @@ public class VendorController : Controller
 
     [HttpGet("/vendors/{vendorName}")]
     public ActionResult Show(string vendorName)
-    {}
+    {
+        return View();
+    }
 
     [HttpGet("/vendors/new")]
     public ActionResult New()
-    {}
+    {
+        return View();
+    }
 
     [HttpPost("/vendors")]
     public ActionResult Create()
-    {}
+    {
+        return RedirectToAction("Index");
+    }
 }

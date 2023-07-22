@@ -27,11 +27,12 @@ public class VendorTests : IDisposable
         string name = "Susie";
         string description = "cafe";
         string orderDescription = "booth";
+        string date = "2023-7-24";
         int price = 1;
         int id = 0;
 
         Vendor test = new Vendor(name, description);
-        test.Add(orderDescription, price);
+        test.Add(orderDescription, date, price);
         Order result = test.Get(id);
 
         Assert.AreEqual(1, test.Get().Count);
@@ -44,11 +45,12 @@ public class VendorTests : IDisposable
         string name = "Susie";
         string description = "cafe";
         string orderDescription = "booth";
+        string date = "2023-7-24";
         int price = 1;
         int id = 0;
 
         Vendor test = new Vendor(name, description);
-        Order tester = new Order(name, orderDescription, price);
+        Order tester = new Order(name, orderDescription, date, price);
         test.Add(tester);
         Order result = test.Get(id);
 
@@ -62,10 +64,11 @@ public class VendorTests : IDisposable
         string name = "Susie";
         string description = "cafe";
         string orderDescription = "booth";
+        string date = "2023-7-24";
         int price = 1;
 
         Vendor test = new Vendor(name, description);
-        test.Add(orderDescription, price);
+        test.Add(orderDescription, date, price);
         List<Order> expected = new List<Order>
         {
             test.Get(0)

@@ -17,3 +17,6 @@ C:\Users\Sm Kou\Github\VendorOrderTracker.Solution\VendorOrderTracker\obj\Debug\
 C:\Users\Sm Kou\Github\VendorOrderTracker.Solution\VendorOrderTracker\obj\Debug\net6.0\VendorOrderTracker.pdb
 C:\Users\Sm Kou\Github\VendorOrderTracker.Solution\VendorOrderTracker\obj\Debug\net6.0\VendorOrderTracker.genruntimeconfig.cache
 C:\Users\Sm Kou\Github\VendorOrderTracker.Solution\VendorOrderTracker\obj\Debug\net6.0\ref\VendorOrderTracker.dll
+C:\Users\Sm Kou\Github\VendorOrderTracker.Solution\VendorOrderTracker\obj\Debug\net6.0\VendorOrderTracker.RazorAssemblyInfo.cache
+C:\Users\Sm Kou\Github\VendorOrderTracker.Solution\VendorOrderTracker\obj\Debug\net6.0\VendorOrderTracker.RazorAssemblyInfo.cs
+C:\Users\Sm Kou\Github\VendorOrderTracker.Solution\VendorOrderTracker\bin\Debug\net6.0\VendorOrderTracker.staticwebassets.runtime.json

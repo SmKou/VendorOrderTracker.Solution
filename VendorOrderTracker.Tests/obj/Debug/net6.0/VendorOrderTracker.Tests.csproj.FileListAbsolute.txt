@@ -102,3 +102,4 @@ C:\Users\Sm Kou\Github\VendorOrderTracker.Solution\VendorOrderTracker.Tests\obj\
 C:\Users\Sm Kou\Github\VendorOrderTracker.Solution\VendorOrderTracker.Tests\obj\Debug\net6.0\VendorOrderTracker.Tests.pdb
 C:\Users\Sm Kou\Github\VendorOrderTracker.Solution\VendorOrderTracker.Tests\obj\Debug\net6.0\VendorOrderTracker.Tests.genruntimeconfig.cache
 C:\Users\Sm Kou\Github\VendorOrderTracker.Solution\VendorOrderTracker.Tests\obj\Debug\net6.0\ref\VendorOrderTracker.Tests.dll
+C:\Users\Sm Kou\Github\VendorOrderTracker.Solution\VendorOrderTracker.Tests\bin\Debug\net6.0\VendorOrderTracker.staticwebassets.runtime.json

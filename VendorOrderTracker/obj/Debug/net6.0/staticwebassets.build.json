@@ -1,11 +1,37 @@
 {
   "Version": 1,
-  "Hash": "p+HaEPuDksiqDzVUDQuMzqUAnka/5sd3DOgB3se6k7I=",
+  "Hash": "WU1zlHRNEyWBqHZJ/7Wf+0pX286lFWBJ6KL5iJdfDGY=",
   "Source": "VendorOrderTracker",
   "BasePath": "_content/VendorOrderTracker",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "VendorOrderTracker\\wwwroot",
+      "Source": "VendorOrderTracker",
+      "ContentRoot": "C:\\Users\\Sm Kou\\Github\\VendorOrderTracker.Solution\\VendorOrderTracker\\wwwroot\\",
+      "BasePath": "_content/VendorOrderTracker",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Sm Kou\\Github\\VendorOrderTracker.Solution\\VendorOrderTracker\\wwwroot\\css\\styles.css",
+      "SourceId": "VendorOrderTracker",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sm Kou\\Github\\VendorOrderTracker.Solution\\VendorOrderTracker\\wwwroot\\",
+      "BasePath": "_content/VendorOrderTracker",
+      "RelativePath": "css/styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles.css"
+    }
+  ]
 }

@@ -16,9 +16,9 @@ public class Vendor
         _vendors.Add(this);
     }
 
-    public void Add(string description, int price)
+    public void Add(string description, string date, int price)
     {
-        _orders.Add(new Order(Name, description, price));
+        _orders.Add(new Order(Name, description, date, price));
     }
 
     public void Add(Order order)
