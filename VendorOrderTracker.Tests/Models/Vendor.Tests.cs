@@ -74,9 +74,9 @@ public class VendorTests : IDisposable
         string description = "cafe";
         Vendor.AddVendor(name, description);
 
-        Assert.AreEqual(1, Vector.GetAll().Count);
-        Assert.AreEqual(name, Vector.Find(1).Name);
-        Assert.AreEqual(description, Vector.Find(1).Description);
+        Assert.AreEqual(1, Vendor.GetAll().Count);
+        Assert.AreEqual(name, Vendor.Find(name).Name);
+        Assert.AreEqual(description, Vendor.Find(name).Description);
     }
 
     [TestMethod]
@@ -84,11 +84,11 @@ public class VendorTests : IDisposable
     {
         string name = "Susie";
         string description = "cafe";
-        Vendor test = new Vendor(name, description);
+        Vendor.AddVendor(name, description);
         Vendor result = Vendor.Find(name);
 
-        Assert.AreEqual(test.Name, result.Name);
-        Assert.AreEqual(test.Description, result.Description);
+        Assert.AreEqual(name, result.Name);
+        Assert.AreEqual(description, result.Description);
     }
 
     [TestMethod]
@@ -97,11 +97,11 @@ public class VendorTests : IDisposable
         string name = "Susie";
         string description = "cafe";
         
-        Vendor test = new Vendor(name, description);
-        List<Vendor> expected = new List<Vendor> { test };
-
+        Vendor.AddVendor(name, description);
         List<Vendor> result = Vendor.GetAll();
 
-        CollectionAssert.AreEqual(expected, result);
+        Assert.AreEqual(1, result.Count);
+        Assert.AreEqual(name, result[0].Name);
+        Assert.AreEqual(description, result[0].Description);
     }
 }
