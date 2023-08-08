@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "MHgFYoRYacBPWrbJJY3Vextze0eT9Ao18Ublm/O2hYH620uhlX5nrF/LAe2EewZSCEuG+On+ehv/opknGFe3oQ==",
+  "dgSpecHash": "efC0hUHDZ1u3rxA4RVMH3vJl5kia5BItJiDiWrVjDkTzsEcnmI61yZ+Qpuzw6gM9ijpmQ7y2qtDwULY4nh7bhg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sm Kou\\Github\\VendorOrderTracker.Solution\\VendorOrderTracker\\VendorOrderTracker.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Sm Kou\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.20\\microsoft.netcore.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\Sm Kou\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.20\\microsoft.windowsdesktop.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\Sm Kou\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.20\\microsoft.aspnetcore.app.ref.6.0.20.nupkg.sha512",
+    "C:\\Users\\Sm Kou\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.20\\microsoft.netcore.app.host.win-x64.6.0.20.nupkg.sha512"
+  ],
   "logs": []
 }
